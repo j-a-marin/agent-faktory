@@ -1,0 +1,18 @@
+[project]
+name = "agent-faktory"
+version = "0.1.0"
+description = "Deterministic DSL-to-Agent compiler. No LLM required."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+registry = ["fastapi", "uvicorn"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
